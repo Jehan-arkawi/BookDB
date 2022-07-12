@@ -23,7 +23,7 @@ class HomeController extends Controller
          $author=Author::all();
          $books = Book::where('title','like','%'.$search.'%')
                     ->orWhere('description','like','%'.$search.'%')
-                    // ->orWhere('name','like','%'.$search.'%')
+                
                     // ->orWhere(author->'name','like','%'.$search.'%')
                     ->get();
                        
